@@ -1,4 +1,5 @@
 // Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -9,9 +10,36 @@ alert (" would you like to use  special characters?");
 alert ("would you like to use upper case?");
 alert ("would you like to use numbers?");
 
+//password data
+var password = generatePassword();{      
+    var symbol = ["+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":",];
+    var numbers = ["0123456789"];
+    var lowerCaselist = ["abcdefhgijklmnopqrstuvwxyz"];
+    var uppercaselist = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+    var passwordlist = [];
+
+
+
+
+
+// let characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+?><';
+// let passwordLength = 8;
+// let passwordValue = '';
+
 //characters (lower,upper,special)
 
-//promted for length of password 8-128
+// var password = generatePassword();{
+  //     var symbolSet = ["!", "@", "#", "$", "%". "^", "&", "*", ""];
+  //     var Numarray = ["0123456789"];
+  //     var lowerCasearray = ["abcdefhgijklmnopqrstuvwxyz"];
+  //     var uppercasearray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  //     var passwordarray = [];
+
+
+
+
+
+  //promted for length of password 8-128
 // input validated one selected 
 // Generate password with validated criteria
 //dispaly password
@@ -35,11 +63,13 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   //  create generate password fucntion
+  var numbers = [];
+  for (var i = 0; i <numbers.length; i++){
+  }
 
-  passwordText.value = password;
 
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
+  //   passwordText.value = password;
+//  for (let i = 0; i < passwordLength; i++) {
+//     let number =Math.floor(Math.random() * characters.length);
+//     passwordValue += characters.substring(number, number + 1);
+//   }
