@@ -10,7 +10,7 @@ var symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password
+  passwordText.value = password;
 
 }
 
@@ -49,7 +49,7 @@ function generatePassword() {
     possibleChoices += symbols
 
   }
- 
+
   var length = prompt('please select a number between 8 and 128');
   if (length > 8 || length > 128) {
     alert(`your password contains ${length} characters`);
@@ -61,11 +61,12 @@ function generatePassword() {
     const randomIndex = Math.floor(Math.random() * possibleChoices.length)
     password += possibleChoices[randomIndex];
   }
-  
+
   if (isNaN(length)) {
     return alert("you must insert a length between 8- 128 click the button to try again")
   }
 
-  console.log(password)
+  // console.log(password)
   return password;
 }
+// window.location.reload("#generate");
