@@ -26,7 +26,7 @@ function generatePassword() {
 
   }
 
-  var haslowerCaselist = confirm("Would you like lower case letters?")
+  var haslowerCaselist = confirm("Would you like to have lowercase letters?")
   console.log(haslowerCaselist);
 
   if (haslowerCaselist) {
@@ -34,7 +34,7 @@ function generatePassword() {
 
   }
 
-  var hasnumbers = confirm("would you like numbers?")
+  var hasnumbers = confirm("would you like to add numbers?")
   console.log(hasnumbers);
 
   if (hasnumbers) {
@@ -42,7 +42,7 @@ function generatePassword() {
 
   }
 
-  var hassymbols = confirm("would you like symbols?")
+  var hassymbols = confirm("would you like  to add symbols?")
   console.log(hassymbols);
 
   if (hassymbols) {
