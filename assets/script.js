@@ -38,7 +38,7 @@ function generatePassword() {
   console.log(hasnumbers);
 
   if (hasnumbers) {
-    possibleChoices += numbers
+    possibleChoices += numbers;
 
   }
 
